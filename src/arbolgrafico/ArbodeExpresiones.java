@@ -3,8 +3,121 @@ import arbolgrafico.Nodo1;
 
 import java.util.*;
 import javax.swing.JPanel;
+/*
+  private NodoGeneral<E> raiz;
+    private int cantidad;
+
+    public ArbolGeneral()
+    {
+        this.cantidad=0;
+    }
+
+    public Elemento<E> getRaiz()
+    {
+        return raiz;
+    }
+
+    public int getCantidad()
+    {
+        return cantidad;
+    }
+
+    private NodoGeneral<E> crearNodo(E e,NodoGeneral<E> padre)
+    {
+        return new NodoGeneral<E>(e,padre);
+    }
+
+    private NodoGeneral<E> validar(Elemento<E> elemento)
+    {
+        if(!(elemento instanceof NodoGeneral))
+        {
+            return null;
+        }
+        NodoGeneral<E> nodoGeneral = (NodoGeneral<E>)elemento;
+        return nodoGeneral.getPadre()==nodoGeneral?null:nodoGeneral;
+    }
+
+    public boolean esRaiz(Elemento<E> elemento)
+    {
+        return elemento==getRaiz();
+    }
+
+    public boolean estaVacia()
+    {
+        return getCantidad()==0;
+    }
+
+    public Elemento<E>obtenerPadre(Elemento<E> elemento)
+    {
+        return validar(elemento).getPadre();
+    }
+
+    public int cantidadHijos(Elemento<E> elemento)
+    {
+        NodoGeneral<E> nodoGeneral=validar(elemento);
+        return nodoGeneral.cantHijos();
+    }
+
+    public int cantidadNiveles(Elemento<E> elemento)
+    {
+        if(esRaiz(elemento))
+        {
+            return 0;
+        }
+        else {
+            return 1+cantidadNiveles(obtenerPadre(elemento));
+        }
+
+    }
 
 
+    public int alto(Elemento<E> elemento)
+    {
+        int alto=0;
+        for (Elemento<E> hijo:obtenerHijos(elemento))
+        {
+            alto=Math.max(alto,1+alto(hijo));
+        }
+        return alto;
+    }
+
+    public ArrayList<Elemento<E>> obtenerHijos(Elemento<E> elemento)
+    {
+        NodoGeneral<E> nodoGeneral=validar(elemento);
+        return nodoGeneral.hijos();
+    }
+
+    public Elemento<E> obtenerElemento(E elemento)
+    {
+        NodoGeneral<Elemento<E>> nodoGeneral=new NodoGeneral<Elemento<E>>();
+        buscar(elemento,getRaiz(),nodoGeneral);
+        return nodoGeneral.getElemento();
+    }
+
+    private void buscar(E elemento, Elemento<E> raiz, NodoGeneral<Elemento<E>> nodoGeneral)
+    {
+        if(elemento.equals(raiz.getElemento()))
+        {
+            nodoGeneral.setElemento(raiz);
+        }
+
+        for(Elemento<E> x:obtenerHijos(raiz))
+        {
+            buscar(elemento,x,nodoGeneral);
+        }
+    }
+
+    public Elemento<E> insertarRaiz(E info)
+    {
+        if(!estaVacia())
+        {
+            return null;
+        }
+        raiz=crearNodo(info,null);
+        cantidad=1;
+        return raiz;
+    }
+*/
 
 
 public class ArbodeExpresiones {

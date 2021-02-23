@@ -3,7 +3,7 @@ package arbolgrafico;
 
   /**
  *
- * @author ploks
+ * @author Jose Carlos
  */
 
 import java.awt.*;
