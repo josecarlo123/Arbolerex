@@ -70,14 +70,9 @@ public class ArbolExpresionGrafico extends JPanel
     }
     
     /**
-     * Calcula el tamaño de cada subárbol y lo agrega al objeto subtreeSizes de la clase
-     * de tipo HashMap que va a contener la coleccion de todos los 
-     * subárboles que contiene un arbol.
+     
      * @param n:Objeto de la clase NodoB <T> que se utiliza como
-     * referencia calcular el tamaño de cada subárbol.
-     * @return Dimension con el tamaño de cada subárbol.
-     */
-    
+   
     /*
     private Dimension calcularTamañoSubarbol(Nodo n) 
     {
@@ -173,7 +168,7 @@ public class ArbolExpresionGrafico extends JPanel
           center = left + ld.width + child2child/2;
       int width = fm.stringWidth(n.getInformacion()+"");
  
-      posicionNodos.put(n,new Rectangle(center - width/2 - 3, top, width + 6, fm.getHeight()));
+      posicionNodos.put(n,new Rectangle(center - width/2 - 20, top, width + 24, fm.getHeight()));
       
       calcularPosicion(n.getNodoIzquierdo(), Integer.MAX_VALUE, center - child2child/2, top + fm.getHeight() + parent2child);
       calcularPosicion(n.getNodoDerecho(), center + child2child/2, Integer.MAX_VALUE, top + fm.getHeight() + parent2child);
@@ -216,7 +211,7 @@ private void dibujarArbol(Graphics2D g, Nodo1 n, int puntox, int puntoy, int yof
      
      Rectangle r = (Rectangle) posicionNodos.get(n);
      g.draw(r);
-     g.drawString(n.getInformacion()+"", r.x + 3, r.y + yoffs);
+     g.drawString(n.getInformacion()+"", r.x + 10, r.y + yoffs);
    
      if (puntox != Integer.MAX_VALUE)
        
